@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import { Menu } from './components/common/Menu.jsx';
+import { Header } from './components/layout/Header.js';
+import { AboutMe } from './components/sections/AboutMe';
+import { Projects } from './components/sections/Projects.js';
+import { Courses } from './components/sections/Courses.js';
+import { Contact } from './components/sections/Contact.js';
+import { Footer } from './components/layout/Footer.js';
 
-function App() {
+const menuItems = ['Inicio', 'Acerca de Mi', 'Proyectos', 'Cursos', 'Contacto'];
+
+export function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Menu menuItems = {menuItems} />
+      <Header />
+      <AboutMe />
+      <Projects />
+      <Courses />
+      <Contact />
+      <Footer />
+    </>
   );
 }
-
-export default App;

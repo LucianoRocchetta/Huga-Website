@@ -1,0 +1,46 @@
+.menu {
+    z-index: 1;
+    background-color: rgb(44, 44, 44);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 10%;
+}
+
+.menu-logo {
+    width: 90%;
+}
+
+.menu-nav {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-li {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.menu-social-media {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.menu-icon {
+    width: 15%;
+    cursor: pointer;
+    padding: 2px;
+}

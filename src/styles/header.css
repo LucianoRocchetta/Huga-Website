@@ -1,0 +1,47 @@
+/* HEADER STYLES */
+.header {
+    width: 90%;
+    position: relative;
+    left: 10%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(10, 10, 10);
+}
+
+.header-intro {
+    display: flex;
+    flex-direction: column;
+    width: 30%;    
+}
+
+.header-intro h2, p {
+    color: white;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.header-intro h2 {
+    font-size: 3em;
+}
+
+.btn {
+    width: 30%;
+    padding: 15px;
+    color: rgb(45, 37, 124);
+    background: transparent;
+    border: 1px solid pink;
+
+}
+
+.header-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.personal-img {
+    width: 100%;
+}
