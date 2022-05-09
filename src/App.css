@@ -1,10 +1,23 @@
 /* CSS IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+@import url('./consts/consts.css');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body-container {
+    background-color: white;
+    background-color: var(--main-bg-color);
+    position: relative;
+    width: 90%;
+    margin-left: 10%;
 }
 
 @import url('./styles/header.css');
 @import url('./styles/menu.css');
+@import url('./styles/courses.css');
+@import url('./styles/footer.css');

@@ -10,7 +10,7 @@ export function Header () {
             <div className = "header-intro">
                 <h2>Hola, soy Anto!</h2>
                 <p>Soy diseñadora gráfica y de indumentaria recibida en la Universidad de Buenos Aires. Me especializo en ilustración y fotografía, conceptualización y comunicación. Contame tu idea y hagámosla realidad!</p>
-                <Button text = "Acerca de Mi"></Button>
+                <Button text = "Descargar CV"></Button>
             </div>
             <div className = "header-img">
                 <img className = "personal-img" src = {personal}></img>

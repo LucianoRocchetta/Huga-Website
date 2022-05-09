@@ -8,6 +8,7 @@ const menuICons = [behance, email, facebook, instagram, whatsapp];
 
 export function Menu (props) {
     return (
+        <>
         <div className = 'menu'>
             <img className = 'menu-logo' src = {logo}></img>
             <nav className = 'menu-nav'>
@@ -15,11 +16,15 @@ export function Menu (props) {
                     return <li className = "menu-li" key = {`${item}`}>{item}</li>
                 })}
             </nav>
-            <div className = 'menu-social-media'>
+            
+        </div>
+        <div className = 'menu-social-media'>
+            <div className='menu-social-media-container'>
                 {menuICons.map((icon) => {
-                    return <MenuIcon icon = {icon}></MenuIcon>
+                return <MenuIcon icon = {icon}></MenuIcon>
                 })}
             </div>
         </div>
+        </>
     );
 }
