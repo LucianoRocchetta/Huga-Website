@@ -1,0 +1,34 @@
+.projects {
+    width: 70%;
+    margin: 10% auto;
+}
+
+.categories {
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(141, 141, 141);
+    display: flex;
+    justify-content: space-around;
+}
+
+.categories li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.projects-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.projects-box .project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+

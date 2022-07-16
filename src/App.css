@@ -13,11 +13,10 @@
     background-color: white;
     background-color: var(--main-bg-color);
     position: relative;
-    width: 90%;
-    margin-left: 10%;
 }
 
 @import url('./styles/header.css');
 @import url('./styles/menu.css');
 @import url('./styles/courses.css');
+@import url('./styles/projects.css');
 @import url('./styles/footer.css');

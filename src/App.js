@@ -13,8 +13,8 @@ export function App() {
       <Menu menuItems = {menuItems} />
       <main className = "body-container">
         <Header />
-        <Projects />
         <Courses />
+        <Projects />
         <Footer />
       </main>
     </>

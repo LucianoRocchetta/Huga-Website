@@ -8,9 +8,12 @@ export function Header () {
     return (
         <header className = "header">
             <div className = "header-intro">
-                <h2>Hola, soy Anto!</h2>
+                <h1>Hola <br/>soy <span>Anto!</span></h1>
                 <p>Soy diseñadora gráfica y de indumentaria recibida en la Universidad de Buenos Aires. Me especializo en ilustración y fotografía, conceptualización y comunicación. Contame tu idea y hagámosla realidad!</p>
-                <Button text = "Descargar CV"></Button>
+                <div className = 'header-btn-container'>
+                    <Button text = "Trabajemos"></Button>
+                    <Button text = "Descargar CV ➜"></Button>
+                </div>
             </div>
             <div className = "header-img">
                 <img className = "personal-img" src = {personal}></img>
