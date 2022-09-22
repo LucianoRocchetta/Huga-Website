@@ -1,31 +1,26 @@
 [
     {
         "id": 1,
-        "projectName": "Project-name",
         "category": "Figurines",
         "imageUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/d2f169144577253.Y3JvcCwxMzY2LDEwNjksMTA4LDA.png"   
     },
     {
         "id": 2,
-        "projectName": "Project-name2",
         "category": "Estampas",
         "imageUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/187518139758121.Y3JvcCw1OTA2LDQ2MTksMCw2NDM.jpg"   
     },
     {
         "id": 3,
-        "projectName": "Project-name3",
         "category": "Ilustraciones",
         "imageUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/828759144270395.Y3JvcCw5ODMsNzY5LDE0OCww.jpg"   
     },
     {
         "id": 4,
-        "projectName": "Project-name4",
         "category": "Ilustraciones",
         "imageUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/828759144270395.Y3JvcCw5ODMsNzY5LDE0OCww.jpg"   
     },
     {
         "id": 5,
-        "projectName": "Project-name5",
         "category": "Ilustraciones",
         "imageUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/828759144270395.Y3JvcCw5ODMsNzY5LDE0OCww.jpg"   
     }

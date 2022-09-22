@@ -1,6 +1,6 @@
 .courses {
-    position: relative;
     width: 100%;
+    height: 100vh;
     background-color: var(--orange-color);
 }
 
@@ -36,7 +36,7 @@
 
 .course-info img {
     z-index: 1;
-    width: 35%;
+    width: 10%;
 }
 
 .course-info span {
@@ -45,17 +45,19 @@
 
 .course-box-container {
     width: 100%;
-    display: flex;
+    padding: 10px;
+    display: grid;
+    column-gap: 2%;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-content: center;
 }
 
 .course-box {
-    position: relative;
+    padding: 10px;
+    background-color: rgba(60, 60, 60, 0.055);
+    backdrop-filter: blur(30%);
     border-radius: 25px 25px 0px 0px;
-    margin-right: 2%;
-    width: 35%;
-    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,40 +65,32 @@
     transition: 0.2s ease-in-out all;
 }
 
+.course-box-info {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-box h3 {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+}
+
 .course-box img {
-    position: absolute;
     border-radius: 25px 25px 0px 0px;
     width: 100%;
     height: 100%;
 }
 
-.course-box:hover {
-    background: none;
-    background-color: rgb(32, 32, 32);
-    transition: 0.2s ease-in-out all;
-}
-
 .course-box h3 {
-    opacity: 0;
     margin-bottom: 20px;
-    color: white;
-}
-
-.course-box button {
-    opacity: 0;
-}
-
-.course-box:hover h3 {
-    opacity: 1;
-    transition: 0.5s ease-in-out all;
+    color: #fff;
 }
 
 .course-box:hover button {
-    opacity: 1;
-    transition: 0.5s ease-in-out all;
     cursor: pointer;
 }
 
-.course-box:hover img {
-    opacity: 0;
-}

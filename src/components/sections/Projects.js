@@ -3,39 +3,35 @@ import { ProjectItem } from '../common/ProjectItem';
 
 export function Projects () {
     const categories = ['Figurines', 'Estampas', 'Ilustraciones', 'Fichas tecnicas'];
+    const [data, setData] = useState([]); 
 
-    async function requestDataProjects () {
+    async function requestDataProjects ( event = null ) {
         try {
             const request = await fetch('DB/projects.json');
             const responseJson = await request.json();
-            setData(responseJson)
+            if (event != null) {
+                const responseCategory = responseJson.filter( ( project ) => project.category == event.target.id);
+                setData (responseCategory);
+            } else {
+                setData(responseJson)
+            }
         } catch (err) {
             console.log(err);
         }
     }
     
     useEffect(()=>{requestDataProjects()},[])
-    const [data, setData] = useState([]); 
-
-    const updateProjects = (event) => {
-        let newData = []
-        data.map((element) => {
-            if (element.category === event.target.id) {
-                newData.push(element);
-            } 
-        }
-        )
-        setData(newData);
-    }
 
     return (
         <>
             <section className = 'projects'>
+                <h2><span>Conocé mis</span> proyectos!</h2>
+                <div className= 'projects-container'>
                 <div>
                     <ul className = "categories">
                         {
                         categories.map((category) => {
-                            return <li><a id = {category} onClick={event => updateProjects(event)} key = {category}>{category}</a></li>
+                            return <li><button id = {category} onClick={event => requestDataProjects(event)} key = {category}>{category}</button></li>
                         })
                         }
                     </ul>
@@ -44,6 +40,7 @@ export function Projects () {
                     {data.map((child) => {
                         return <ProjectItem data = {child}/>;
                     })}
+                </div>
                 </div>
             </section>
         </>

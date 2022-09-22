@@ -1,12 +1,13 @@
 import React from 'react';
-import { Button } from '../common/Button.jsx';
 
-export function CourseBox ({nameCourse, image}) {
+export function CourseBox ({courseName, image, modal, courseId}) {
     return (
         <div className = 'course-box'> 
             <img src = {image}/>
-            <h3>{nameCourse}</h3>
-            <Button text = 'See More'></Button>
+            <div className= 'course-box-info'>
+                <h3>{courseName}</h3>
+                <button name = {courseId} onClick = {modal} className = 'btn'>See More</button>
+            </div>
         </div>
     );
 }
