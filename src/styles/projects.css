@@ -1,61 +1,62 @@
 .projects {
-    background-color: var(--violet-color);
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  background-color: var(--violet-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .projects > h2 {
-    color: var(--orange-color);
-    margin-bottom: 2%;
-    font-size: 6rem;
+  color: var(--orange-color);
+  width: 80%;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 2%;
+  font-size: 2rem;
 }
 
 .projects > h2 span {
-    color: var(--main-bg-color);
+  color: var(--main-bg-color);
 }
 
 .projects-container {
-    width: 60%;
+  width: 80%;
 }
 
 .categories {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    list-style: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .categories button {
-    background-color: var(--pink-color);
-    border: none;
-    color: #fff;
-    margin-right: 10px;
-    padding: 20px;
-    border-radius: 20px;
-    list-style: none;
-    cursor: pointer;
+  width: 100%;
+  background-color: var(--pink-color);
+  border: none;
+  padding: 5px;
+  color: #fff;
+  border-radius: 10px;
+  margin-right: 2%;
+  cursor: pointer;
 }
 
 .categories button:hover {
-    background-color: var(--main-bg-color);
-    color: #000;
+  background-color: var(--main-bg-color);
+  color: #000;
 }
 
 .projects-box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 1em;
-    column-gap: 1em;
-    width: 100%;
-    margin-top: 5%;
+  width: 70%;
+  margin: auto;
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 1%;
+  column-gap: 2%;
 }
 
 .projects-box .project-item img {
-    width: 100%;
+  width: 100%;
 }
-
-
-
