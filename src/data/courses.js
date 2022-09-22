@@ -1,11 +1,11 @@
-import { courses } from '../assets/courses/index.js';
-const [ img1, img2, img3, img4 ] = courses;
+import { courses } from "../assets/courses/index.js";
+const [img1, img2, img3, img4] = courses;
 
 const coursesData = [
-    {
-        id: 1,
-        title: 'Curso de armado de Moodboards',
-        description: `•El curso se divide en contenido teórico y práctico.<br>
+  {
+    id: 1,
+    title: "Curso de armado de Moodboards",
+    description: `•El curso se divide en contenido teórico y práctico.<br>
 
         •Contenido: Aprenderán el proceso de conceptualización de una idea a través del pasaje hacia lo morfológico y semántico. Además veremos todos los elementos necesarios para realizar un trabajo coherente y completo para aplicar en cualquier ámbito del diseño. Veremos diversas herramientas digitales para el desarrollo del collage final.<br>
         
@@ -36,13 +36,13 @@ const coursesData = [
             -Técnicas > collage, fotomontaje, maquetado
             -Illustrator y Photoshop
         `,
-        price: '$4000',
-        image: img1,
-    }, 
-    {
-        id: 2,
-        title: 'Curso de diseño de indumentario inicial',
-        description: `•Contenido: Recorrido por los conceptos básicos del diseño. Etapa analítica, adjetivación y conceptualización, rubros y tipologias, idea rectora y de partido, que es una colección y como se compone. Veremos cómo realizar un análisis completo sobre temática, conceptualización y desarrollo de etapa creativa, dónde se desarrollará una serie de indumentaria diseñada 100% por el alumno aplicando todos los conceptos aprendidos.  
+    price: "$4000",
+    image: img1,
+  },
+  {
+    id: 2,
+    title: "Curso de diseño de indumentario inicial",
+    description: `•Contenido: Recorrido por los conceptos básicos del diseño. Etapa analítica, adjetivación y conceptualización, rubros y tipologias, idea rectora y de partido, que es una colección y como se compone. Veremos cómo realizar un análisis completo sobre temática, conceptualización y desarrollo de etapa creativa, dónde se desarrollará una serie de indumentaria diseñada 100% por el alumno aplicando todos los conceptos aprendidos.  
 
         •Si estás iniciando la carrera este curso te va a servir para adentrarte en todas las nociones básicas en la creación de productos tangibles. Si no estás haciendo la carrera pero te interesa adentrarte en el rubro, te será útil para adquirir herramientas de diseño diversas que te llevarán a poder desarrollar productos únicos para emprender de manera exitosa.
         
@@ -81,13 +81,13 @@ const coursesData = [
         -Selección de materiales
         -Bocetado y armado de conjuntos
         `,
-        price: '$6000',
-        image: img2,
-    },
-    {
-        id: 3,
-        title: 'Curso de marroquineria inicial',
-        description: `•Contenido: Se verán los trazados de la moldería con posibles variaciones y el proceso de confección de las tipologías básicas del rubro marroquinero, con el fin de que cada alumno pueda adquirir la capacidad de entender la composición de los productos y así poder desarrollarlos a futuro sin la necesidad de utilizar guías y poder hacer sus propios diseños y confección de los mismos. Este curso brinda las herramientas necesarias para que el alumno pueda llevar a cabo sus productos de manera fácil, en casa y con herramientas convencionales y hasta convertirlo en un emprendimiento con salida laboral.
+    price: "$6000",
+    image: img2,
+  },
+  {
+    id: 3,
+    title: "Curso de marroquineria inicial",
+    description: `•Contenido: Se verán los trazados de la moldería con posibles variaciones y el proceso de confección de las tipologías básicas del rubro marroquinero, con el fin de que cada alumno pueda adquirir la capacidad de entender la composición de los productos y así poder desarrollarlos a futuro sin la necesidad de utilizar guías y poder hacer sus propios diseños y confección de los mismos. Este curso brinda las herramientas necesarias para que el alumno pueda llevar a cabo sus productos de manera fácil, en casa y con herramientas convencionales y hasta convertirlo en un emprendimiento con salida laboral.
         Se hará entrega del paso a paso de los trazados en PDF y los vídeos con el paso a paso de la confeccion.
         DE REGALO! Se hará entrega de las molderías terminadas imprimibles en formato PDF 🤯
         
@@ -105,13 +105,13 @@ const coursesData = [
         -Riñonera
         -Mochila'
         `,
-        price: '$5000',
-        image: img3,
-    },
-    {
-        id: 4,
-        title: 'Curso para emprendedores',
-        description: `•El curso se divide en contenido teórico y práctico.
+    price: "$5000",
+    image: img3,
+  },
+  {
+    id: 4,
+    title: "Curso para emprendedores",
+    description: `•El curso se divide en contenido teórico y práctico.
 
         • Contenido: Estás buscando iniciar tu emprendimiento pero no sabes por dónde empezar? En este curso veremos todas las herramientas que necesitas tener en cuenta para darle un impulso a tu negocio y recorrer un camino exitoso con tus productos! También vas a aprender todo sobre las redes más utilizadas para expansión y ventas y como aprovecharlas al máximo para mostrar tus productos de la mejor manera posible. Métodos de organización para no perderte y poder llevar a cabo todas las tarea de una manera ordenada y eficaz.
         DE REGALO! Planillas descargables para organizar tus contenidos, costos y otros.
@@ -127,8 +127,8 @@ const coursesData = [
         -Planilla de costos en excel.
         -Técnicas y herramientas de planificación general para ordenar tus tiempos.
         `,
-        price: '$4500',
-        image: img4,
-    },
+    price: "$4500",
+    image: img4,
+  },
 ];
 export { coursesData };

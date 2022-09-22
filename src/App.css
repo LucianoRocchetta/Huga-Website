@@ -1,64 +1,109 @@
 /* CSS IMPORTS */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
-@import url('./consts/consts.css');
-@import url('./styles/modal.css');
-@import url('./styles/header.css');
-@import url('./styles/menu.css');
-@import url('./styles/courses.css');
-@import url('./styles/projects.css');
-@import url('./styles/services.css');
-@import url('./styles/footer.css');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
+@import url("./consts/consts.css");
+@import url("./styles/modal.css");
+@import url("./styles/header.css");
+@import url("./styles/menu.css");
+@import url("./styles/courses.css");
+@import url("./styles/projects.css");
+@import url("./styles/services.css");
+@import url("./styles/footer.css");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .body-container {
-    background-color: var(--main-bg-color);
-    position: relative;
+  background-color: var(--main-bg-color);
 }
 
 /* RESPONSIVE DESIGN */
 
-@media (max-width: 600px) {
-    /* MENU */
-    .menu-logo {
-        height: 60%;
-    }
+@media (min-width: 1400px) {
+  /* MENU */
+  .menu-logo {
+    height: 100%;
+  }
+  .menu-li {
+    padding: 15px;
+  }
+  .menu-social-media {
+    width: 5%;
+  }
 
-    /* HEADER */
-    .header {
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
-    .header-intro h1 {
-        font-size: 2rem;
-    }
-    .header-intro p {
-        font-size: 0.5rem;
-    }
-    .header-img, .header-intro {
-        width: 60%;
-    }
-    .header-intro .btn {
-        width: 100%;
-        padding: 10px;
-    }
+  /* HEADER */
+  .header {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .header-img {
+    width: 25%;
+  }
+  .header-intro {
+    width: 40%;
+  }
+  .header-intro h1 {
+    font-size: 7rem;
+  }
+  .header-intro p {
+    font-size: 1rem;
+  }
+  .btn {
+    width: 40%;
+    padding: 20px;
+  }
 
-    /* COURSES */
+  /* COURSES */
+  .course-info h2 {
+    font-size: 5rem;
+    margin-top: 0;
+  }
+  .course-box-container {
+    width: 90%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .course-box h3 {
+    font-size: 1rem;
+  }
 
-    .course-info h2, .projects h2, .services h2 {
-        font-size: 2rem;   
-    }
-    .course-box-container {
-        height: 50px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .course-box h3{
-        font-size: 1rem;
-    }
+  /* PROJECTS */
+  .projects > h2 {
+    font-size: 5rem;
+  }
+  .projects-box {
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+  }
+  .categories {
+    width: 80%;
+    margin: auto;
+  }
+  .categories button {
+    padding: 20px;
+    border-radius: 20px;
+    margin-right: 2%;
+  }
 
+  /* SERVICES */
+  .services-container {
+    margin-top: 15%;
+    flex-direction: row;
+  }
+  .services-container h2 {
+    font-size: 5rem;
+  }
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2%;
+  }
+  .services h2 {
+    margin-top: 0;
+  }
+  .services-container > img {
+    display: block;
+    z-index: 1;
+    width: 30%;
+  }
 }
