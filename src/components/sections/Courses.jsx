@@ -19,7 +19,8 @@ export function Courses() {
           return <ModalCourses id={course.id} data={course} key={course.id} />;
         })
       }
-      <section className="courses">
+      <section className="courses" id = "Cursos">
+      
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#D57C8C"
@@ -28,14 +29,13 @@ export function Courses() {
           ></path>
         </svg>
         <div className="course-container">
+          <div id = "courses-avatar"><img src={coursesAvatar}></img></div>
           <div className="course-info">
-            <img src={coursesAvatar}></img>
             <h2>
               Visitá <br />
-              mis <span>cursos!</span>
+              <span>mis cursos!</span>
             </h2>
-          </div>
-          <div className="course-box-container">
+            <div className="course-box-container">
             {coursesData.map((course) => {
               return (
                 <CourseBox
@@ -43,9 +43,11 @@ export function Courses() {
                   modal={showModalCourse}
                   courseName={course.title}
                   image={course.image}
+                  url={course.url}
                 ></CourseBox>
               );
             })}
+          </div>
           </div>
         </div>
       </section>

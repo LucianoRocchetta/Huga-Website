@@ -1,12 +1,13 @@
 import "./App.css";
+import "./helpers";
 import { Menu } from "./components/common/Menu.jsx";
-import { Header } from "./components/layout/Header.js";
-import { Projects } from "./components/sections/Projects.js";
-import { Courses } from "./components/sections/Courses.js";
-import { Services } from "./components/sections/Services.js";
-import { Footer } from "./components/layout/Footer.js";
+import { Header } from "./components/layout/Header.jsx";
+import { Projects } from "./components/sections/Projects.jsx";
+import { Courses } from "./components/sections/Courses.jsx";
+import { Services } from "./components/sections/Services.jsx";
+import { Footer } from "./components/layout/Footer.jsx";
 
-const menuItems = ["Inicio", "Proyectos", "Cursos", "Contacto"];
+const menuItems = ["Inicio", "Cursos", "Proyectos", "Servicios" , "Contacto"];
 
 export function App() {
   return (

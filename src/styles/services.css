@@ -2,6 +2,7 @@
   background-color: var(--main-bg-color);
   position: relative;
   width: 100%;
+  margin-bottom: 5%;
   display: flex;
   align-items: center;
 }
@@ -19,7 +20,7 @@
   color: var(--orange-color);
 }
 
-.services-container > img {
+.services-container .services-avatar {
   display: none;
 }
 
@@ -54,4 +55,11 @@
   width: 100%;
   margin-bottom: 5%;
   border-radius: 10px;
+}
+
+
+/* ANIMATIONS */
+.services-grid img:hover {
+  scale: 1.03;
+  box-shadow: 1px 1px 20px 2px var(--main-bg-color);
 }

@@ -20,7 +20,7 @@ export function Projects() {
         );
         setData(responseCategory);
       } else {
-        setData(responseJson);
+        setData(responseJson.splice(1, 12));
       }
     } catch (err) {
       console.log(err);
@@ -33,7 +33,7 @@ export function Projects() {
 
   return (
     <>
-      <section className="projects">
+      <section className="projects" id = "Proyectos">
         <h2>
           <span>Conocé mis</span> proyectos!
         </h2>

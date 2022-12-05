@@ -1,18 +1,27 @@
 import React from "react";
+import { IoCloseCircle } from "react-icons/io5";
 
 const showModalOff = (event) => {
-  event.target.offsetParent.classList.toggle("enabled");
+  const id = (event.target.getAttribute('buttonId'));
+  const modal = document.getElementById(id);
+  modal.classList.toggle('enabled');
 };
 
-export const ModalCourses = ({ data: { title, description, price, id } }) => {
+export const ModalCourses = ({ data: { title, description, price, topics, id, url } }) => {
   return (
     <div className="modal-courses disabled" id={id}>
       <div className="modal-container">
-        <button onClick={showModalOff}>X</button>
-        <h2>{title}</h2>
-        <p>Descripción: {description}</p>
+        <div className = "modal-bar">
+          <h2>{title}</h2>
+          <IoCloseCircle 
+            buttonId = { id } 
+            onClick = { showModalOff }
+          />
+        </div>
+        <p>{description}</p>
+        <p>{topics}</p>
         <h3>Precio: {price}</h3>
-        <button className="btn">Comprar</button>
+        <a href = { url } className="btn">Comprar</a>
       </div>
     </div>
   );
