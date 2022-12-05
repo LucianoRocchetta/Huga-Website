@@ -1,5 +1,6 @@
 .projects {
   width: 100%;
+  height: max-content;
   background-color: var(--violet-color);
   display: flex;
   flex-direction: column;
@@ -21,7 +22,7 @@
 }
 
 .projects-container {
-  width: 80%;
+  width: 70%;
 }
 
 .categories {
@@ -33,6 +34,7 @@
 
 .categories button {
   width: 100%;
+  height: 60px;
   background-color: var(--pink-color);
   border: none;
   padding: 5px;
@@ -44,11 +46,11 @@
 
 .categories button:hover {
   background-color: var(--main-bg-color);
-  color: #000;
+  color: var(--pink-color);
 }
 
 .projects-box {
-  width: 70%;
+  width: 100%;
   margin: auto;
   margin-top: 10%;
   display: grid;
@@ -59,4 +61,11 @@
 
 .projects-box .project-item img {
   width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.projects-box .project-item img:hover {
+  transform: scale(1.04);
 }

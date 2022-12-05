@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Link } from "react-scroll";
 import "../../App.css";
+import cv from '../../assets/docs/cv.pdf';
 import personalAvatar from "../../assets/avatars/personal.png";
-import { Button } from "../common/Button.jsx";
+import { IoChevronDown } from "react-icons/io5";
 
 export function Header() {
   return (
-    <header className="header">
+    <header className="header" id = "Inicio">
       <div className="header-intro">
         <h1>
           Hola <br />
@@ -19,13 +21,14 @@ export function Header() {
           realidad!
         </p>
         <div className="header-btn-container">
-          <Button text="Trabajemos"></Button>
-          <Button text="Descargar CV ➜"></Button>
+          <Link className = 'btn' to='Contacto' spy={true} smooth={true} offset={-50} duration={500}>Trabajemos</Link>
+          <a href = {cv} className= 'btn'>Mirar CV ➜</a>
         </div>
       </div>
       <div className="header-img">
         <img className="personal-img" src={personalAvatar}></img>
       </div>
+      <Link to='Cursos' spy={true} smooth={true} offset={-50} duration={500} className="bottom-panel"><IoChevronDown/></Link>
     </header>
   );
 }

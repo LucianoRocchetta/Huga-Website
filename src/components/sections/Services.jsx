@@ -1,10 +1,10 @@
 import React from "react";
-import { services } from "../../assets/services/index.js";
+import { serviceLinks } from "../../assets/services/index.js";
 import servicesAvatar from "../../assets/avatars/servicios.png";
 
 const Services = () => {
   return (
-    <div className="services">
+    <div className="services" id = "Servicios">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#AB7994"
@@ -16,12 +16,12 @@ const Services = () => {
         <div className="flex-box">
           <h2>Servicios</h2>
           <div className="services-grid">
-            {services.map((service) => {
-              return <img src={service}></img>;
+            {serviceLinks.map((service, i) => {
+              return <a key = { i} href = {service.url}><img src={service.image}></img></a>;
             })}
           </div>
         </div>
-        <img src={servicesAvatar}></img>
+        <img className = 'services-avatar' src={servicesAvatar}></img>
       </div>
     </div>
   );
