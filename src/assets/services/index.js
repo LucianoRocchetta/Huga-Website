@@ -19,7 +19,7 @@ const serviceLinks = [
     },
     {
         image: service3,
-        url: "https://docs.google.com/forms/d/e/1FAIpQLSczhir7rPSMAaaZdW4yrBvbymVfuxXBmpsNz6NpDdKtGgQEFQ/viewform?vc=0&c=0&w=1&flr=0",
+        url: "https://docs.google.com/forms/d/11k0aY-_bmeXYONnSqTI9Ys5iOgv3E4QtFlviPCpKZJc",
     },
     {
         image: service4,
@@ -27,7 +27,7 @@ const serviceLinks = [
     },
     {
         image: service5,
-        url: "https://docs.google.com/forms/d/e/1FAIpQLSczhir7rPSMAaaZdW4yrBvbymVfuxXBmpsNz6NpDdKtGgQEFQ/viewform?vc=0&c=0&w=1&flr=0",
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSdefbEyZUIsgY9-NM0B7keNSMDEOEpd_n7D28NyUVHPBLVUwg/viewform?vc=0&c=0&w=1&flr=0",
     },
     {
         image: service6,

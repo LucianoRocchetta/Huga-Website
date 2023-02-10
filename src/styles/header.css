@@ -59,6 +59,7 @@ p,
 }
 
 .header-btn-container .btn {
+  cursor: pointer;
   margin-right: 2%;
   margin-bottom: 10%;
 }

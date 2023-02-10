@@ -1,44 +1,48 @@
 import { courses } from "../assets/courses/index.js";
-const [img1, img2, img3, img4] = courses;
+const [img1, img2, img3, img4, img5, img6] = courses;
 
 const coursesData = [
   {
     id: 1,
     title: "Curso de Figurin Digital Inicial",
-    description: `▪️ El curso se divide en contenido teórico y práctico.
+    description: `• El curso se divide en contenido teórico y práctico.
 
-    ▪️Contenido: Aprenderán el proceso de conceptualización de una idea a través del pasaje hacia lo morfológico y semántico. Además veremos todos los elementos necesarios para realizar un trabajo coherente y completo para aplicar en cualquier ámbito del diseño. Veremos diversas herramientas digitales para el desarrollo del collage final.
-    `,
+    • 4 clases de 2hs de duración.
+    
+    INICIO 02/02
+    
+    • Día de cursada: Jueves 11hs
+    
+    • Las mismas quedarán grabadas por si el alumno no puede asistir en el horario planteado.
+    
+    • Contenido: Aprenderán las bases y proporciones principales a tener en cuenta para el dibujo del cuerpo humano. Además haremos un recorrido por los principales puntos a tener en cuenta al dibujar una prenda, los rubros y el anclaje con el cuerpo. Veremos diversas herramientas digitales para el desarrollo de textiles, luces y sombras.`,
     topics: `TEMARIO:
         
     ✨ Módulo 1:
-    | ¿Qúé es? ¿Para qué sirve?
-    | Aspectos a considerar (forma, color, textura, semántica)
-    | Herramientas y técnicas para su armado
+    | El cuerpo y sus proporciones
+    | Movimiento y articulaciones
+    | Bocetado a mano
+    | Digitalización y collage
 
     ✨ Módulo 2:
-    | Búsqueda de tendencias
-    | Selección de temática a trabajar
-    | Adjetivación
-    | Paleta de color
-    | Búsqueda de imágenes
+    | Prendas > presentación de los diferentes rubros
+    | Anclaje de las prendas y sus caídas
+    | Bocetado a mano
     
     ✨ Módulo 3:
-    | ¿Cómo seleccionar imágenes?
-    | Recursos semánticos y recursos mofológicos
-    | Elementos estéticos
-    | Tendencias
-    | Fusión y armonía > definición 
-    | Presentación de programas de diseño
+    | Digitalización de prendas
+    | Color y sombra
+    | Texturas
     
     ✨ Módulo 4:
-    | Armado: 
-    | Técnicas > collage, fotomontaje, maquetado
-    | Illustrator y Photoshop
+    | Búsqueda de referencias y recursos
+    | Armado de prendas con collage digital
+    | Herramientas clave en photoshop
     `,
     price: "$5000",
     image: img1,
-    url: "https://mpago.la/1W8B2K2"
+    url: "https://mpago.la/1W8B2K2",
+    available: true,
   },
   {
     id: 2,
@@ -85,7 +89,8 @@ const coursesData = [
     | Bocetado y armado de conjuntos`,
     price: "$6000",
     image: img2,
-    url: "https://mpago.la/1foYCbE"
+    url: "https://mpago.la/1foYCbE",
+    available: false,
   },
   {
     id: 3,
@@ -134,7 +139,51 @@ const coursesData = [
     `,
     price: "$6500",
     image: img4,
-    url: "https://mpago.la/1iexTEX"
+    url: "https://mpago.la/1iexTEX",
+    available: false,
+  },
+  {
+    id: 5,
+    title: "Diseño de indumentaria intensivo",
+    description: `•El curso se divide en contenido teórico y práctico.
+
+    •8 clases de 2hs de duración.
+    
+    INICIO 07/02
+    
+    •Día de cursada: Martes 11hs
+    
+    •Las mismas quedarán grabadas por si el alumno no puede asistir en el horario planteado.
+    
+    •Contenido: Aprenderás todas las bases necesarias para poder conceptualizar una idea y bajarla a una colección de diseño, con propuestas innovadoras e identidad propia. 
+    Aprenderás a desarrollar un moodboard inspiracional, haremos texturas, y diseñaremos 4 conjuntos a través del concepto de línea, serie y colección para que luego cada alumno pueda desarrollar la cantidad de conjuntos que considere necesarios para su idea/marca.
+        `,
+    topics: `
+    ✨ TEMARIO:
+        | Que es el diseño.
+        | Vanguardias artísticas.
+        | Identidad.
+        | Moodboard.
+        | Texturas convencionales y no convencionales.
+        | Colección, serie y línea.
+        | Diseño de colección.
+        | Fotografía y redes
+    `,
+    price: "$8000",
+    image: img5,
+    url: "https://mpago.la/32cinW8",
+    available: true,
+  },
+  {
+    id: 6,
+    title: "Pack diseñador",
+    description: `▪️ Ambos cursos están conectados y se complementan, si te interesa comprar el combo te hacemos un 10% de descuento 🤯🙌🏻`,
+    topics: `
+    `,
+    price: "$11700",
+    image: img6,
+    url: "https://mpago.la/1iMwURZ",
+    available: true,
   },
 ];
 export { coursesData };

@@ -26,7 +26,7 @@ export function Header() {
         </div>
       </div>
       <div className="header-img">
-        <img className="personal-img" src={personalAvatar}></img>
+        <img className="personal-img" src={personalAvatar} alt = {personalAvatar}></img>
       </div>
       <Link to='Cursos' spy={true} smooth={true} offset={-50} duration={500} className="bottom-panel"><IoChevronDown/></Link>
     </header>
