@@ -29,7 +29,7 @@ export function Courses() {
           ></path>
         </svg>
         <div className="course-container">
-          <div id = "courses-avatar"><img src={coursesAvatar}></img></div>
+          <div id = "courses-avatar"><img src={coursesAvatar} alt = {coursesAvatar}></img></div>
           <div className="course-info">
             <h2>
               Visitá <br />
@@ -39,6 +39,7 @@ export function Courses() {
             {coursesData.map((course) => {
               return (
                 <CourseBox
+                  key = {course.id}
                   courseId={course.id}
                   modal={showModalCourse}
                   courseName={course.title}

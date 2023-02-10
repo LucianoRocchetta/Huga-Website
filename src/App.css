@@ -36,10 +36,10 @@ body {
   transition: 0.1s ease-in-out;
 }
 
-.btn {
+.btn, .btn-no {
   text-align: center;
   z-index: 0;
-  width: 60%;
+  width: 50%;
   padding: 10px;
   color: var(--main-bg-color);
   background-color: var(--pink-color);
@@ -47,11 +47,18 @@ body {
   border-radius: 10px;
 }
 
+.btn-no {
+  filter: grayscale(90%);
+}
+
 
 /* RESPONSIVE DESIGN */
 
 @media (min-width: 600px) and (max-width: 1400px) {
   /* MENU */
+  .menu {
+    flex-direction: row;
+  }
   .menu-logo {
     height: 100%;
   }
@@ -83,8 +90,8 @@ body {
     margin-top: 0;
   }
   .course-box-container {
-    width: 100%;
-    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
   }
   .course-box h3 {
     font-size: 1rem;
@@ -142,6 +149,9 @@ body {
   .contact button {
     width: 40%;
   }
+  .contact h2 {
+    font-size: 4rem;
+  }
 
   .footer-container h2, h3 {
     font-size: 1rem; 
@@ -151,6 +161,9 @@ body {
 
 @media (min-width: 1400px) {
   /* MENU */
+  .menu {
+    flex-direction: row;
+  }
   .menu-logo {
     height: 100%;
   }
@@ -190,6 +203,9 @@ body {
   }
 
   /* COURSES */
+  .courses {
+    height: 100vh;
+  }
   .course-info h2 {
     font-size: 5rem;
     margin-top: 0;
@@ -201,8 +217,8 @@ body {
     display: block;
   }
   .course-box-container {
-    width: 90%;
-    grid-template-columns: repeat(4, 1fr);
+    width: 60%;
+    grid-template-columns: repeat(3, 1fr);
   }
   .course-box h3 {
     font-size: 1rem;
@@ -269,6 +285,9 @@ body {
 
   .footer-container h2, h3 {
     font-size: 1rem; 
+  }
+  .contact h2 {
+    font-size: 5rem;
   }
   #contact-avatar {
     display: block;

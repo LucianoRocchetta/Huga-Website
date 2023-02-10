@@ -53,7 +53,7 @@ export function Projects() {
           </div>
           <div className="projects-box">
             {data.map((child) => {
-              return <ProjectItem data={child} />;
+              return <ProjectItem data={child} key = {child.id}/>;
             })}
           </div>
         </div>
