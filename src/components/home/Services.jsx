@@ -1,6 +1,6 @@
 import React from "react";
-import { serviceLinks } from "../../assets/services/index.js";
-import servicesAvatar from "../../assets/avatars/servicios.png";
+import { serviceLinks } from "../../assets/img/services/index"
+import servicesAvatar from "../../assets/img/avatars/servicios.png";
 
 const Services = () => {
   return (
@@ -27,4 +27,4 @@ const Services = () => {
   );
 };
 
-export { Services };
+export default Services

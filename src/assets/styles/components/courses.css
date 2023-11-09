@@ -1,7 +1,9 @@
-.courses {
+.courses{
   position: relative;
   width: 100%;
-  height: 100%;
+  min-height: min-content;
+  height: fit-content;
+  max-height: max-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,8 +51,9 @@
 
 #courses-avatar img {
   display: none;
+  position: absolute;
   bottom: 0;
-  width: 100%;
+  left: 0;
   height: 80%;
   z-index: 3;
 }
@@ -69,6 +72,7 @@
   column-gap: 1rem;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 .course-box {

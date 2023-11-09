@@ -1,12 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { Link } from "react-scroll";
 import "../../App.css";
 import cv from '../../assets/docs/cv.pdf';
-import personalAvatar from "../../assets/avatars/personal.png";
+import personalAvatar from "../../assets/img/avatars/personal.png";
 import { IoChevronDown } from "react-icons/io5";
 
-export function Header() {
+const Header = () => {
   return (
     <header className="header" id = "Inicio">
       <div className="header-intro">
@@ -32,3 +31,4 @@ export function Header() {
     </header>
   );
 }
+export default Header

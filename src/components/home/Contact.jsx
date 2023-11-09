@@ -1,10 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { ContactInput } from "../common/ContactInput";
-import avatar from '../../assets/avatars/contacto.png';
+import avatar from '../../assets/img/avatars/contacto.png';
 import emailjs from '@emailjs/browser';
 
-export function Contact() {
+const Contact = () => {
 
   const sendMessage = (e) => {
     e.preventDefault();
@@ -19,7 +18,7 @@ export function Contact() {
   }
 
   return (
-    <div className="contact" id = "Contacto">
+    <div className="contact" id ="Contacto">
       <img id = "contact-avatar" src = {avatar} alt = {avatar} />
       <h2>Contact</h2>
       <form onSubmit={sendMessage}>
@@ -31,3 +30,5 @@ export function Contact() {
     </div>
   );
 }
+
+export default Contact

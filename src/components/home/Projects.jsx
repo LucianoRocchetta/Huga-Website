@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ProjectItem } from "../common/ProjectItem";
 
-export function Projects() {
+const Projects = ()  => {
   const categories = [
     "Figurines",
     "Estampas",
@@ -61,3 +61,5 @@ export function Projects() {
     </>
   );
 }
+
+export default Projects

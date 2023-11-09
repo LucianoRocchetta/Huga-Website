@@ -1,8 +1,8 @@
 import React from "react";
-import { CourseBox } from "../common/CourseBox";
-import coursesAvatar from "../../assets/avatars/courses.png";
+import { CourseBox } from "../common/CourseBox.jsx";
+import coursesAvatar from "../../assets/img/avatars/courses.png";
 import { ModalCourses } from "../common/ModalCourses.jsx";
-import { coursesData } from "../../data/courses.js";
+import { coursesData } from "../../constants/courses.js";
 
 //This function will create modals windows about the differents courses.
 const showModalCourse = (event) => {
@@ -10,7 +10,7 @@ const showModalCourse = (event) => {
   modalCourse.classList.toggle("enabled");
 };
 
-export function Courses() {
+const Courses = () => {
   return (
     <>
       {
@@ -55,3 +55,5 @@ export function Courses() {
     </>
   );
 }
+
+export default Courses

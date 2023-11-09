@@ -21,7 +21,7 @@ footer {
   z-index: 1;
   background-color: var(--pink-color);
   position: relative;
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;

@@ -1,4 +1,4 @@
-import { courses } from "../assets/courses/index.js";
+import { courses } from "../assets/img/courses/index";
 const [img1, img2, img3, img4, img5, img6] = courses;
 
 const coursesData = [
