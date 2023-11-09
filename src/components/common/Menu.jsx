@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/img/logo.png";
 import { Link } from "react-scroll";
-import { socialMedias } from "../../assets/SVG/index.js";
+import { socialMedias } from "../../assets/img/SVG";
 import { MenuIcon } from "./MenuIcon";
 
 export function Menu(props) {
